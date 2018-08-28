@@ -4,70 +4,95 @@ body {
     height: 100%;
     left: 0px;
     top: 0px;
-    z-index: 689;
+    right: 0px;
 }
 
-img {
+ img {
     max-width: 100%;
 }
 
 #carousel-caption-text {
-    width: 100%;
-    height: 100%;
+    color: #fff;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    vertical-align: middle;
     text-align: center;
-    display: flex;
-    align-items: center;
-    margin: auto;
 
-}
+    }
 
 #h3.carousel{
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 36px;
   font-weight: bold;
 }
 #h1.carousel{
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 72px;
   font-weight: bold;
   color: red;
 }
 
-#img-logo{
-  height: 50px;
-  width: auto;
+/*----- Nav Bar-------*/
+#center_nav {
+  text-align: center !important;
+  align-content: space-around;
+
 }
 
-.nav-text{
-  font-family: raleway;
+#custom_nav {
+  text-align: center;
+  color: "red";
+  align-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#img_logo{
+  height: 50px;
+  width: auto;
+  float: left;
+}
+
+
+#nav_text{
+  font-family: "raleway";
   font-size: 16px;
+  float: right;
   text-transform: capitalize;
   color: red !important;
+
 }
 
 .main{
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 16px;
   margin: 0px;
   }
 
-.title {
-    font-family: Montserrat;
+.title h3 {
+    font-family: "Montserrat";
     font-size: 36px;
     font-weight: bold;
     text-align: center;
     text-transform: capitalize;
     color: #444;
-    padding-bottom: 40px;
+    padding-bottom: 5px;
 }
-.sub-title-text {
-  font-family: raleway;
-  font-size: 18 px;
+
+.line_set {
+  text-align: center;
+}
+
+.sub-title-text h4 {
+  font-family: "raleway";
+  font-size: 18px;
   text-align: center;
   text-transform: capitalize;
   color: white;
   padding-bottom: 50px;
 }
+
 .sub-title-bg {
   background-image: url(img/double_triangle.svg);
   width: 100%;
@@ -77,7 +102,7 @@ img {
 }
 
 .sub_title_bg_triangle {
-  background-image: url(img/bg_triangle_about_us.svg);
+  background-image: url(img/bg_triangle_about_me.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
@@ -88,7 +113,7 @@ img {
   padding-bottom: 0px;
 }
 
-#about_us {
+#about_me {
   padding-bottom: 100px;
 }
 
@@ -97,7 +122,8 @@ img {
 .about-us-image-bg {
 border-radius: 5px;
 background-color: rgb(249, 249, 249);
-box-shadow: 0px 2px 7.68px 0.32px rgba(207, 207, 207, 0.7);
+-webkit-box-shadow: 0px 2px 7.68px 0.32px rgba(207, 207, 207, 0.7);
+        box-shadow: 0px 2px 7.68px 0.32px rgba(207, 207, 207, 0.7);
 width: 458px;
 height: 419px;
 padding: 21px 21px 21px 21px;
@@ -149,12 +175,16 @@ p {
 
 }
 #skill-title {
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 36px;
   font-weight: bold;
   color: #444;
-  padding-bottom: 40px:
-  }
+  padding-bottom: 40px;
+}
+
+#more_skill_text {
+  display: none;
+}
 
 .skills {
   position: relative;
@@ -235,10 +265,11 @@ p {
   height: auto;
 }
 
-#services_1 {
+.services_1 {
   background-color: rgb(255, 255, 255);
   border-bottom-right-radius: 50px;
-  box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+  -webkit-box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+          box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 30px;
@@ -247,7 +278,7 @@ p {
   z-index: 535;
 }
 
-#services_1up {
+.services_1up {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(220, 220, 220);
@@ -261,11 +292,13 @@ p {
   z-index: 536;
 }
 
-#services_2 {
+
+.services_2 {
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+  -webkit-box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+          box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 30px;
@@ -274,7 +307,7 @@ p {
   z-index: 535;
 }
 
-#services_2up {
+.services_2up {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(220, 220, 220);
@@ -289,10 +322,11 @@ p {
   z-index: 536;
 }
 
-#services_3 {
+.services_3 {
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 50px;
-  box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+  -webkit-box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+          box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 30px;
@@ -301,7 +335,7 @@ p {
   z-index: 535;
 }
 
-#services_3up {
+.services_3up {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(220, 220, 220);
@@ -315,10 +349,11 @@ p {
   z-index: 536;
 }
 
-#services_4 {
+.services_4 {
   background-color: rgb(255, 255, 255);
   border-top-right-radius: 50px;
-  box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+  -webkit-box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+          box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 30px;
@@ -327,7 +362,7 @@ p {
   z-index: 535;
 }
 
-#services_4up {
+.services_4up {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(220, 220, 220);
@@ -341,11 +376,12 @@ p {
   z-index: 536;
 }
 
-#services_5 {
+.services_5 {
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+  -webkit-box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+          box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 30px;
@@ -354,7 +390,7 @@ p {
   z-index: 535;
 }
 
-#services_5up {
+.services_5up {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(220, 220, 220);
@@ -369,10 +405,11 @@ p {
   z-index: 536;
 }
 
-#services_6 {
+.services_6 {
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 50px;
-  box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+  -webkit-box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
+          box-shadow: 0px 2px 7.68px 0.32px rgba(220, 220, 220, 0.6);
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 30px;
@@ -381,7 +418,7 @@ p {
   z-index: 535;
 }
 
-#services_6up {
+.services_6up {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(220, 220, 220);
@@ -393,6 +430,11 @@ p {
   width: 340px;
   height: 253px;
   z-index: 536;
+}
+
+.services_1up:hover, .services_2up:hover, .services_3up:hover, .services_4up:hover, .services_5up:hover, .services_6up:hover {
+  background-color: #f39c12;
+  color: #fff;
 }
 
 .service_icon_bg {
@@ -403,7 +445,8 @@ p {
   background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(255,255,255) 0%, rgb(249,249,249) 100%);
   background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(255,255,255) 0%, rgb(249,249,249) 100%);
   background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(255,255,255) 0%, rgb(249,249,249) 100%);
-  box-shadow: 0px 2px 7.68px 0.32px rgba(204, 204, 204, 0.3);
+  -webkit-box-shadow: 0px 2px 7.68px 0.32px rgba(204, 204, 204, 0.3);
+          box-shadow: 0px 2px 7.68px 0.32px rgba(204, 204, 204, 0.3);
   box-sizing: border-box;
   margin: auto;
   width: 73px;
@@ -431,26 +474,33 @@ p {
 
 .service_sub_title {
   font-size: 24px;
-  font-family: "Raleway";
-  color: rgb(85, 85, 85);
+  font-family: "raleway";
   font-weight: bold;
   line-height: 1.458;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 25px;
-  z-index: 539;
 }
 
 .text_center {
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 16px;
   text-align: center;
   margin: 0px;
 }
 
+/* ------------------------------------
+              statistics
+------------------------------------*/
+
 #statistics_block {
-  background-image: url(img/cytonn-photography-604681-unsplash.jpg);
+  height: 100%;
+ /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(img/cytonn-photography-604681-unsplash.jpg);
   max-width: 100%;
   margin: 0;
   padding: 0;
@@ -539,7 +589,7 @@ p {
   border: none;
   top: -1px;
   font-size: 16px;
-  font-family: raleway;
+  font-family: "raleway";
   text-transform: uppercase;
   padding: 10px 30px;
   letter-spacing: 2px;
@@ -550,16 +600,23 @@ p {
   -webkit-box-shadow: 0px 5px 15px -2px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 15px -2px rgba(0, 0, 0, 0.1);
 }
+
 .portfolio .filtering .active {
   background-color: #f8f8f8;
   color: #444;
   border-left: 2px solid #ef970b;
   border-bottom: 2px solid #ef970b;
-  border-top: none;
-  border-right: none;
   -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.2);
 }
+
+.portfolio .filtering button:hover {
+  background-color: #f8f8f8;
+  color: #444;
+  -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.2);
+}
+
 .portfolio .gallery .item-img {
   position: relative;
   overflow: hidden;
@@ -631,9 +688,6 @@ p {
   text-align: center;
   padding: 0 10px;
 }
-
-
-
 
 
 .portfolio .gallery .item-img .part-img .overlay-img h4:before {
@@ -728,7 +782,7 @@ p {
   background-image: url(img/testimonial_bg.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
+
   height: 630px;
   width: 1508px;
   margin-top: 0px;
@@ -740,17 +794,46 @@ p {
 
 .client_image{
   margin-top: 0px;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-bottom: 0px;
   text-align: center;
-  width: 150px;
+  width: 300px;
   height: 300px;
-  text-align: center;
-  margin: auto;
+  padding-top: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  -ms-transform: skewX(30deg); /* IE 9 */
+  -webkit-transform: skewX(30deg); /* Safari */
+          transform: skewX(30deg); /* Standard syntax */
 
+}
+
+.client_image img{
+  height: 150px;
+  width: auto;
+
+
+}
+
+.client_data {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 600px;
+  height: 200px;
+  -ms-transform: skewX(30deg); /* IE 9 */
+  -webkit-transform: skewX(30deg); /* Safari */
+          transform: skewX(30deg); /* Standard syntax */
 }
 
 .client_name {
   margin-top: 0px;
-  font-family: roboto;
+  font-family: "roboto";
+  width: 100%;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
@@ -758,24 +841,21 @@ p {
 }
 
 .client_designation {
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 16px;
   color: #fff;
   text-align: center;
 }
 
 .client_comments {
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 16px;
   color: #fff;
   text-align: center;
-  padding: 40px;
-  width: 470px;
-  height: 90px;
-  margin: auto;
 }
+
 /* -------------------------------------------------------
-                   09 - News
+                   09 - News/blog (card)
 -------------------------------------------------------- */
 #my_blog_bg {
   padding-top: 100px;
@@ -790,24 +870,68 @@ p {
 
 }
 
+#card_style {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 2px 9.5px 0.5px rgba(219, 219, 219, 0.3);
+          box-shadow: 0px 2px 9.5px 0.5px rgba(219, 219, 219, 0.3);
+  z-index: 203;
+}
+
+#card_style:hover {
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 6px 16px 1px rgba(219, 219, 219, 1.0);
+          box-shadow: 0px 8px 16px 1px rgba(219, 219, 219, 1.0);
+  z-index: 203;
+}
+
+#card_style .card_tagline {
+  position: absolute;
+  top: 220px;
+  background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+  font-family: "Montserrat";
+  font-size: 24px;
+  text-align: center;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+}
+
+.card_title {
+  font-family: "raleway";
+  font-size: 22px;
+  font-weight: 400;
+  color: #444;
+}
+
+.card .card-img-top:hover {
+  opacity: 0.7;
+}
+
 .card-img-top {
   width: 100%;
   height: auto;
-
 }
 
 .card_date {
-  font-family: raleway;
+  font-family: "raleway";
   font-size: 14px;
   font-weight: 300;
   color: #545454;
   padding-bottom: 30px;
 }
 
+.card-footer {
+  color: #555;
+}
+
  .comments {
   display: inline-block;
   padding-right: 20px;
+}
 
+#more_01, #more_02, #more_03 {
+  display: none;
 }
 
 .share {
@@ -836,8 +960,11 @@ p {
   width: 360px;
   height: 141px;
   background-color: #fff;
-  box-shadow: 0px 2px 9.5px 0.5px rgba(219, 219, 219, 0.6);
+  -webkit-box-shadow: 0px 2px 9.5px 0.5px rgba(219, 219, 219, 0.6);
+          box-shadow: 0px 2px 9.5px 0.5px rgba(219, 219, 219, 0.6);
   color: #666;
+  border-left: 4px solid #ef970b;
+  box-sizing: border-box;
 }
 
 .contact_icon {
@@ -857,4 +984,172 @@ p {
   font-family: "roboto";
   font-size: 16px;
   color: #666;
+}
+
+/* -------------------------------------------------------
+                   09 - Contact Me (Map and message)
+-------------------------------------------------------- */
+#map {
+  padding: 0px;
+}
+
+.map_and_message {
+  background-color: #f9f9f9;
+  margin: 0px;
+}
+
+.message {
+  padding: auto;
+  align-items: center;
+  text-align: left;
+  margin: auto;
+/*
+  padding-top: 100px;
+  padding-right: 30px;
+  padding-left: 0px;
+  padding-bottom: 100px; */
+}
+
+.message_title {
+  font-family: "raleway";
+  font-size: 24px;
+  font-weight: 400;
+  padding-left: 15px;
+  color: #555;
+
+}
+
+/*----- from ------ */
+.contact .contact-form {
+  position: relative;
+}
+
+.contact .contact-form .help-block li {
+  color: red;
+  font-size: 14px;
+}
+.contact .contact-form input, .contact .contact-form textarea {
+  color: #666;
+  background: transparent;
+  padding: 10px 15px;
+  border-radius: 0;
+  width: 100%;
+  border: transparent;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.contact .contact-form textarea {
+  width: 100%;
+  min-height: 120px;
+  max-height: 120px;
+}
+.contact .contact-form ::-webkit-input-placeholder {
+  color: #888 !important;
+}
+.contact .contact-form :-ms-input-placeholder {
+  color: #888 !important;
+}
+.contact .contact-form ::-ms-input-placeholder {
+  color: #888 !important;
+}
+.contact .contact-form ::placeholder {
+  color: #888 !important;
+}
+.contact .contact-form ::-webkit-input-placeholder {
+  color: #888 !important;
+}
+.contact .contact-form ::-ms-input-placeholder {
+  color: #888 !important;
+}
+.contact .contact-form ::-webkit-input-placeholder {
+  color: #888 !important;
+}
+
+/*
+.contact .contact-form button.btn, .contact .contact-form a.btn {
+  background-color: #fff;
+  color: #ef970b;
+  border: 1px solid #ef970b;
+}
+
+button.btn a.btn:hover {
+  background-color:  #ef970b;
+  color: #fff;
+}  */
+
+/* -------------------------------------------------------
+                   12 - Footer
+-------------------------------------------------------- */
+.footer {
+  position: relative;
+  background-color: #333;
+  background-image: url(img/footer_bg.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-top: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 100px;
+}
+
+.footer .logo {
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.footer .logo img {
+  height: 50px;
+  width: auto;
+  text-align: center;
+  margin: auto;
+}
+
+.footer .scoial-icon {
+  position: relative;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.footer .scoial-icon a {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgb(102, 102, 102);
+  -webkit-box-shadow: 0px 2px 9.5px 0.5px rgba(34, 34, 34, 0.4);
+          box-shadow: 0px 2px 9.5px 0.5px rgba(34, 34, 34, 0.4);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.footer .scoial-icon a i {
+  color: #ccc;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+}
+.footer .scoial-icon a:hover {
+  background-color: #ef970b;
+}
+.footer .scoial-icon a:hover i {
+  color: #fff;
+  -webkit-box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.09);
+          box-shadow: 1px 2px 20px 7px rgba(4, 6, 4, 0.09);
+}
+.footer .cop {
+  width: 100%;
+  padding-top: 40px;
+}
+.footer .cop h6 {
+  color: #999;
+  font-size: 14px;
+  font-family: "roboto";
+  font-weight: 400;
+  letter-spacing: 2px;
 }
